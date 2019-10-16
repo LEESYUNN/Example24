@@ -11,6 +11,10 @@ def get_dir_all_full_path(target_dir):
 
 
 if __name__ == '__main__': 
+
     target_dir = os.getcwd()
+
     file_full_paths = get_dir_all_full_path(target_dir)
+
     print(file_full_paths)
+
