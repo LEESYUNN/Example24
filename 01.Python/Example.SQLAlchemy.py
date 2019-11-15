@@ -22,7 +22,8 @@ Session = sessionmaker(bind=engine)
 # connect db
 session = Session()
 
-for i in range(10, 50):
+for i in range(10):
+    # VirtualRows
     uuidText = str(uuid.uuid1())
     row = Sentence(row_id=i, text='%s %s' % (uuidText, i))
 
